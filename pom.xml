@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.springsecurity</groupId>
+	<artifactId>spring-security</artifactId>
+	<version>1.0.01-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>Projeto para teste de interação entre JSF e Spring Security</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven-jar-plugin.version>3.0</maven-jar-plugin.version>
+	</properties>
+
+	<!-- Parâmetros de execução -->
+	<build>
+		<!-- Nome do projeto empacotado -->
+		<finalName>spring-security</finalName>
+
+		<!-- Plugins -->
+		<plugins>
+			<!-- Compilador -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
